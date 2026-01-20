@@ -1,0 +1,198 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+/* Main container */
+.container {
+    background: #ffffff;
+    width: 85%;
+    max-width: 950px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #667eea;
+    color: #fff;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+header p {
+    color: #777;
+    margin-top: 8px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fafafa;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+section h2 {
+    color: #444;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #667eea;
+    display: block;
+    margin-top: 6px;
+    border-radius: 5px;
+}
+
+/* Highlight effect */
+section.active {
+    background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+    border-left: 6px solid #667eea;
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills li {
+    list-style: none;
+    background: #667eea;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Lists */
+section ul {
+    margin-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
+/* Section text */
+.section-text {
+    color: #555;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* Project cards */
+.project-card {
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Tags */
+.tag {
+    display: inline-block;
+    background: #667eea;
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 8px;
+    margin-right: 6px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+}
+
+/* Education */
+.edu-item {
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.edu-item p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.year {
+    font-size: 0.85rem;
+    color: #999;
+}
